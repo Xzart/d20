@@ -1,31 +1,36 @@
 import random
 
-def kostka4(x):
+## Dice functions
+def dice4(x):
     return random.randint(1,x)
-def kostka6(x):
+def dice6(x):
     return random.randint(1,x)
-def kostka8(x):
+def dice8(x):
     return random.randint(1,x)
-def kostka10(x):
+def dice10(x):
     return random.randint(0,x)
-def kostka12(x):
+def dice12(x):
     return random.randint(1,x)
-def kostka20(x):
+def dice20(x):
     return random.randint(1,x)
 
-k4 = kostka4(4)
-k6 = kostka6(6)
-k8 = kostka8(8)
-k10 = kostka10(9)
-k12 = kostka12(12)
-k20 = kostka20(20)
+##List values
+k4 = dice4(4)
+k6 = dice6(6)
+k8 = dice8(8)
+k10 = dice10(9)
+k12 = dice12(12)
+k20 = dice20(20)
 
-print('Kostka k4 - Wynik:', k4)
-print('Kostka k6 - Wynik:', k6)
-print('Kostka k8 - Wynik:', k8)
-print('Kostka k10 - Wynik:', k10)
-print('Kostka k12 - Wynik:', k12)
-print('Kostka k20 - Wynik:', k20)
+print('Test - Dice functions. No Magic Methods')
+print('Dice k4 - Result:', k4)
+print('Dice k6 - Result:', k6)
+print('Dice k8 - Result:', k8)
+print('Dice k10 - Result:', k10)
+print('Dice k12 - Result:', k12)
+print('Dice k20 - Result:', k20)
+print('Sum of all dice:',k4 + k6 + k8 + k10 + k12 + k20,'\n')
 
-print('2k4 + 3k6 =', 2*k4 + 3*k6)
-print('k4 + 2k6=', k4 + 2*k6)
+print('Test - Dice operations.')
+print('2k4 + 3k6 :', 2*k4 + 3*k6)
+print('k4 + 2k6 :', k4 + 2*k6)
