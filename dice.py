@@ -1,29 +1,31 @@
 import random
 
-class Dice:
-    def kostka6(x,y):
-        return random.randint(x,y)
-    def kostka4(x,y):
-        return random.randint(x,y)
-    def kostka8(x,y):
-        return random.randint(x,y)
-    def kostka10(x,y):
-        return random.randint(x,y)
-    def kostka12(x,y):
-        return random.randint(x,y)
-    def kostka20(x,y):
-        return random.randint(x,y)
-    
+def kostka4(x):
+    return random.randint(1,x)
+def kostka6(x):
+    return random.randint(1,x)
+def kostka8(x):
+    return random.randint(1,x)
+def kostka10(x):
+    return random.randint(0,x)
+def kostka12(x):
+    return random.randint(1,x)
+def kostka20(x):
+    return random.randint(1,x)
 
-kostka4 = Dice.kostka4(1,4)
-kostka6 = Dice.kostka6(1,6)
-kostka8 = Dice.kostka6(1,8)
-kostka10 = Dice.kostka6(0,9)
-kostka12 = Dice.kostka6(1,12)
-kostka20 = Dice.kostka6(1,20)
-print('Kostka k4 - Wynik:', kostka4)
-print('Kostka k6 - Wynik:', kostka6)
-print('Kostka k8 - Wynik:', kostka8)
-print('Kostka k10 - Wynik:', kostka10)
-print('Kostka k12 - Wynik:', kostka12)
-print('Kostka k20 - Wynik:', kostka20)
+k4 = kostka4(4)
+k6 = kostka6(6)
+k8 = kostka8(8)
+k10 = kostka10(9)
+k12 = kostka12(12)
+k20 = kostka20(20)
+
+print('Kostka k4 - Wynik:', k4)
+print('Kostka k6 - Wynik:', k6)
+print('Kostka k8 - Wynik:', k8)
+print('Kostka k10 - Wynik:', k10)
+print('Kostka k12 - Wynik:', k12)
+print('Kostka k20 - Wynik:', k20)
+
+print('2k4 + 3k6 =', 2*k4 + 3*k6)
+print('k4 + 2k6=', k4 + 2*k6)
